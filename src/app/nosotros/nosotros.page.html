@@ -1,0 +1,27 @@
+<ion-content force-overscroll="false">
+  <gl-background-video src="assets/img/video.mov" poster="assets/img/fondo login.jpg"></gl-background-video>
+
+  <ion-card>
+    <ion-card-header>
+      <h3>&#191;Quienes somos?</h3>
+    </ion-card-header>
+    <ion-card-conent>
+      <ion-list>
+        <ion-item>
+          <p>David Alvarado, Daniel Navarro y Jaime Luna. Estudiantes de Desarrollo de Software de la Universitaria Agustiniana.
+          </p>
+        </ion-item>
+      </ion-list>
+    </ion-card-conent>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-icon slot="start" name="home" [routerLink]="['/login']" color="primary"></ion-icon>
+      <ion-title>Conocenos</ion-title>
+      <ion-icon slot="end" name="hammer" [routerLink]="['/creditos']" color="primary"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

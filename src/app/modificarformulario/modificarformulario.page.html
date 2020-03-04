@@ -1,0 +1,153 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/modificar']">
+        <ion-icon slot="icon-only" name="arrow-round-back" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Modificar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo">
+<ion-card>
+
+  <ion-item>
+    <ion-avatar slot="end">
+      <img src="{{ re.imagen  }}">
+    </ion-avatar>
+    <ion-label>{{re.nombre}} {{re.apellido}} <p>{{re.numero_do}} </p>
+    </ion-label>
+  </ion-item>
+
+  <ion-grid fixed class="login">
+    <ion-row>
+      <ion-col>
+        <ion-label position="floating">Nombre</ion-label>    
+        <ion-input class="input" [(ngModel)]="re.nombre" placeholder="Nombre" expand="full"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label position="floating">Apellido</ion-label>
+        <ion-input class="input" [(ngModel)]="re.apellido" placeholder="Apellido" expand="full"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label position="floating">Username</ion-label>
+        <ion-input class="input" [(ngModel)]="re.username" placeholder="Username" expand="full"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input class="input" [(ngModel)]="re.contrasena" placeholder="Contraseña" expand="full"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label position="floating">Edad</ion-label>
+        <ion-select cancelText="Nah" [(ngModel)]="re.edad" placeholder="Edad" okText="Aceptar">
+          <ion-select-option value="15">15</ion-select-option>
+          <ion-select-option value="16">16</ion-select-option>
+          <ion-select-option value="17">17</ion-select-option>
+          <ion-select-option value="18">18</ion-select-option>
+          <ion-select-option value="19">19</ion-select-option>
+          <ion-select-option value="20">20</ion-select-option>
+          <ion-select-option value="21">21</ion-select-option>
+          <ion-select-option value="22">22</ion-select-option>
+          <ion-select-option value="23">23</ion-select-option>
+          <ion-select-option value="24">24</ion-select-option>
+          <ion-select-option value="25">25</ion-select-option>
+          <ion-select-option value="26">26</ion-select-option>
+          <ion-select-option value="27">27</ion-select-option>
+          <ion-select-option value="28">28</ion-select-option>
+        </ion-select>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label position="floating">Sexo</ion-label>
+        <ion-select cancelText="Nah" [(ngModel)]="re.sexo" placeholder="Sexo" okText="Aceptar">
+          <ion-select-option value="masculino">Masculino</ion-select-option>
+          <ion-select-option value="femenino">Femenino</ion-select-option>
+        </ion-select>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label position="floating">Tipo de Documento</ion-label>
+        <ion-select cancelText="Nah" [(ngModel)]="re.tipo_documento" placeholder="Tipo de Documento" okText="Aceptar">
+          <ion-select-option value="cc">Cedula</ion-select-option>
+          <ion-select-option value="ti">Tarjeta De Identidad</ion-select-option>
+        </ion-select>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label position="floating">Documento</ion-label>
+        <ion-input type="number" [(ngModel)]="re.numero_do" placeholder="Documento"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label position="Edad">Email</ion-label>
+        <ion-input [(ngModel)]="re.email" placeholder="Email"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label position="floating">Direccion</ion-label>
+        <ion-input [(ngModel)]="re.direccion" placeholder="Direccion"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label position="floating">Telefono</ion-label>
+        <ion-input type="number" [(ngModel)]="re.telefono" placeholder="Telefono"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label position="floating">Carrera</ion-label>
+        <ion-select cancelText="Nah" [(ngModel)]="re.carrera" placeholder="Carrera" okText="Aceptar">
+          <ion-select-option value="Telecomunicaciones">Teleco</ion-select-option>
+          <ion-select-option value="Software">Software</ion-select-option>
+          <ion-select-option value="Industrial">Industrial</ion-select-option>
+          <ion-select-option value="Gastronimia">Gastronimia</ion-select-option>
+        </ion-select>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label position="floating">Jornada</ion-label>
+        <ion-select cancelText="Nah" [(ngModel)]="re.jornada" placeholder="Jornada" okText="Aceptar">
+          <ion-select-option value="Diurna">Diurna</ion-select-option>
+          <ion-select-option value="Nocturna">Nocturna</ion-select-option>
+        </ion-select>
+      </ion-col>
+    </ion-row>
+
+    
+
+
+    <ion-button class="camara" (click)="modificar()">
+      <ion-label>modificar</ion-label>
+    </ion-button>
+
+  </ion-grid>
+</ion-card>
+</ion-content>

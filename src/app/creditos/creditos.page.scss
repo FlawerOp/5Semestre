@@ -1,0 +1,54 @@
+
+ion-card{
+    background: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    padding: 0%;
+}
+
+ion-card-header{
+  background: rgba(255, 255, 255, 0.829);
+  color: rgb(0, 0, 0);
+}
+
+ion-item{
+  --background: none;
+  --color:white;
+  --border-bottom: 10px;
+  --border-color: white;
+}
+
+ion-title{
+  text-align: center;
+}
+
+.ultima{
+  --background: none;
+  --color:white;
+  --border-bottom: none;
+}
+
+ion-list{
+  background: rgba(0, 0, 0, 0.692);
+  color:  white;
+  font-weight: bold;
+  display: block;
+}
+
+h3{
+  text-align: center;
+  font-weight: bold;
+}
+
+p{
+  margin-right: 2%;
+  margin-bottom:5%; 
+}
+
+img{
+  width: 40%;
+  height: auto;
+  margin-top: 4%;
+  margin-bottom: 5%;
+  margin-right: 3%;
+  border-radius: 15px;
+}

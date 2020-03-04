@@ -1,0 +1,65 @@
+
+.fondo{
+    --background: url(../../assets/img/fondo.jpg);
+}
+
+ion-title{
+    text-align: center;
+}
+
+ion-input{
+    background: rgba(255, 255, 255, 0.39);
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+ion-card{
+    background: rgba(0, 0, 0, 0.767);
+    color: #ffffff;
+    padding: 0%;
+}
+
+ion-select{
+    color: white;
+    font-weight: bold;
+}
+
+.camara{
+    display: block;
+}
+
+ion-thumbnail{
+    margin: 40%;
+    margin-top:0.5%;
+    margin-bottom:3%; 
+    width: 40%;
+    height: auto;
+}
+
+.labelraro{
+    font-weight: bold;
+}
+
+ion-list{
+    border-radius: 10px;
+}
+
+.gorro{
+    --border-bottom: 1px;
+    --border-color: black;
+}
+
+.gorror{
+    --border-bottom: none;
+
+}
+
+.gorro ion-input,.gorror ion-input{
+    --color: orange;
+}
+
+
+.gorro ion-label,.gorror ion-label{
+    width: 100%;
+    margin-right: 100%;
+}

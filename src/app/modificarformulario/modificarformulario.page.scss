@@ -1,0 +1,38 @@
+
+.fondo{
+    --background: url(../../assets/img/fondo.jpg);
+}
+
+ion-title{
+    text-align: center;
+}
+
+ion-input{
+    background: rgba(255, 255, 255, 0.39);
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+ion-card{
+    background: rgba(0, 0, 0, 0.767);
+    color: #ffffff;
+    padding: 0%;
+}
+
+ion-select{
+    color: white;
+    font-weight: bold;
+}
+
+.camara{
+    display: block;
+}
+
+ion-thumbnail{
+
+    margin: 2%;
+}
+
+.labelraro{
+    font-weight: bold;
+}

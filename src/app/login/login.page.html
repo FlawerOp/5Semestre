@@ -1,0 +1,60 @@
+<ion-content>
+  <gl-background-video src="assets/img/video2.mov" poster="/assets/img/fondo login.jpg"></gl-background-video>
+  <ion-card>
+  <img src="../../assets/img/usuario.png" alt="">
+    <h2>Inicio de Sesion</h2>
+      <ion-grid fixed class="login">
+        <ion-row>
+          <ion-col size="10" offset="1">
+
+              <ion-input class="input" [(ngModel)]="dat.username" placeholder="Nombre de Usuario"></ion-input>
+      
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="10" offset="1">
+      
+              <ion-input [(ngModel)]="dat.contrasena" placeholder="Contraseña" ></ion-input>
+
+      
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="10" offset="1">
+        
+            <ion-button (click)="login()" expand="full" shape="round" color="secondary">
+              <ion-label>Ingresar</ion-label>
+            </ion-button>
+        
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="10" offset="1">
+      
+            <ion-button [routerLink]="'/resgistrar'" expand="full" fill="clear" shape="round" color="secondary">
+               <ion-label>Registrate</ion-label>
+            </ion-button>
+      
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </ion-card>
+</ion-content>
+  
+
+<ion-footer>
+
+      <ion-tab-buttons [routerLink]="'/creditos'" expand="full">
+        <ion-icon name="help-circle" slot="start"></ion-icon>
+        Informacion
+        <ion-icon name="help-circle" slot="end"></ion-icon>
+      </ion-tab-buttons>
+  
+
+      <ion-tab-buttons [routerLink]="'/nosotros'">
+        <ion-icon name="hammer" slot="start"></ion-icon>
+        Conocenos
+        <ion-icon name="hammer" slot="end"></ion-icon>
+      </ion-tab-buttons>
+  
+</ion-footer>

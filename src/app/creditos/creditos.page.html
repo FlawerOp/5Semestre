@@ -1,0 +1,128 @@
+<ion-content force-overscroll="false">
+  <gl-background-video src="assets/img/video.mov" poster="assets/img/fondo login.jpg"></gl-background-video>
+
+  <ion-card>
+    <ion-card-header>
+      <h3>&#191;En qué consiste la App?</h3>
+    </ion-card-header>
+    <ion-card-conent>
+      <ion-list>
+        <ion-item>
+          <p>La aplicacion esta enfocada en registros, existen dos tipos de usuarios, los ADMINISTRADORES y los ESTUDIANTES, los Administradores
+            se registran en el Inicio de Sesion, pero requieren de un codigo de Administrador especial. A su vez, los administradores pueden
+            registrar, modificar y eliminar usuarios tipo Estuante. 
+            <br>
+            Los usuarios tipo Estudiante podran ingresar si su registro fue previamente realizado por un Administrador, estos podran ver solo su
+            informacion ingresada.
+          </p>
+        </ion-item>
+      </ion-list>
+    </ion-card-conent>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <h3>Iniciar sesión cómo ADMINISTRADOR</h3>
+    </ion-card-header>
+    <ion-card-conent>
+      <ion-list>
+        <ion-item>
+         <p>1. Damos click en el boton "REGISTRATE" si no tienes una cuenta de ADMINISTRADOR, si es asi, Inicia Sesion con el 
+           Username y la Contraseña.<br> <br> Nota: Esta opcion es solo para registrar ADMINISTRADORES, los Admin podran registrar, 
+           modificar y eliminar Estudiantes.</p>
+         <img src="../../assets/info/1.png" alt=""> 
+        </ion-item>
+      <ion-item>
+        <p>2. Llenamos todos los campos con nuestra informacion personal y al finalizar damos en el boton "REGISTRAR". <br><br>
+        Aviso: El codigo de ADMINISTRADOR es obligatorio. Tener en cuenta los
+        caracteres y las Mayusculas.</p>
+        <img src="../../assets/info/2.png" alt="">
+    </ion-item>
+    <ion-item class="ultima">
+      <p>3. Al realizar el registro, ingresamos en la pestaña de Inicio de Sesion con el Username y Contraseña previamente creado. Tener en cuenta los
+      caracteres y las Mayusculas.
+      </p>
+      <img src="../../assets/info/3.png" alt="">
+    </ion-item>
+    </ion-list>
+    </ion-card-conent>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <h3>Funciones de ADMINISTRADOR</h3>
+    </ion-card-header>
+    <ion-card-conent>
+      <ion-list>
+        <ion-item>
+          <p>Al ingresar tendremos un menu deslizable en la esquina superior izquierda, donde encontraremos todas las funciones de 
+            Administrador. Al desplegar el menu abra un apartado con nuestra informacion y foto de perfil.
+          </p>
+          <img src="../../assets/info/4.png" alt="">
+        </ion-item>
+        <ion-item>
+          <p>1. El inicio de administrador cuenta con un REGISTRO, este sirve para registrar Usuarios nuevos tipo Estudiantes.
+            <br><br>
+            Nota: Es obligatorio llenar todos los campos que se encuentran en el registro. Tener en cuenta los
+            caracteres y las Mayusculas.
+          </p>
+          <img src="../../assets/info/5.png" alt="">
+        </ion-item>
+        <ion-item>
+          <p>2. En la pestaña de Modificar, podremos modificar la informacion de todos los Estudiantes previamente registrados, 
+            dandole al boton modificar, y luego reingresando los TODOS datos del formulario.
+            <br><br>
+            Nota: No se puede modificar la infomacion de los Administradores registrados.
+          </p>
+          <img src="../../assets/info/6.png" alt="">
+        </ion-item>
+        <ion-item class="ultima">
+          <p>3. La pestaña de Eliminar, es para eliminar cualquier usuario tipo Estudiante previamente registrado.
+            <br><br>
+            Nota: Los usuarios eliminados no se podran recuperar a no ser que sean nuevamente registrados por el Administrador.
+          </p>
+          <img src="../../assets/info/7.png" alt="">
+        </ion-item>
+      </ion-list>
+    </ion-card-conent>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <h3>Iniciar sesión cómo ESTUDIANTE</h3>
+    </ion-card-header>
+    <ion-card-conent>
+      <ion-list>
+        <ion-item>
+          <p>1. Ingresamos con el Username y Contraseña de Estudiante previamente registrado por el Administrador.
+            <br><br>
+            Nota: Si el administrador modificó o eliminó el usuario no se podra ingresar, tener en cuenta los
+            caracteres y las Mayusculas.
+          </p>
+          <img src="../../assets/info/3.png" alt="">
+        </ion-item>
+        <ion-item>
+          <p>2. Tendremos un menu de usuario con dos opciones, Informacion del Estudiante y salir.</p>
+          <img src="../../assets/info/8.png" alt="">
+        </ion-item>
+        <ion-item class="ultima">
+          <p>3. La opcion de Informacion del Estudiante nos mostrara una lista con los datos del Estudiante previamente ingresados por el
+            Administrador.
+          </p>
+          <img src="../../assets/info/9.png" alt="">
+        </ion-item>
+      </ion-list>
+    </ion-card-conent>
+  </ion-card>
+  
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-icon slot="start" name="home" [routerLink]="['/login']" color="primary"></ion-icon>
+      <ion-title>Informacion</ion-title>
+      <ion-icon slot="end" name="help-circle" [routerLink]="['/nosotros']" color="primary"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,64 @@
+<ion-menu side="start" menuId="admi1">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Administrador</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+
+    <ion-item>
+      <ion-avatar slot="end">
+        <img src="{{ datos.imagen }}">
+      </ion-avatar>
+      <ion-label>{{ datos.nombre }} {{ datos.apellido }} <p>{{ datos.numero_do }}</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-list>
+      <ion-item (click)="redirecionar('Registrar')">Registrar</ion-item>
+      <ion-item (click)="redirecionar('Modificar')">Modificar</ion-item>
+      <ion-item (click)="redirecionar('eliminar')">Eliminar</ion-item>
+      <ion-item (click)="redirecionar('/login')">Salir</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-router-outlet main></ion-router-outlet>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="sidemenu()">
+        <ion-icon slot="icon-only" name="menu" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Eliminar
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content *ngIf="tipousuario=='admi'" class="fondo">
+
+  <ion-searchbar type="number" placeholder="Search" debounce="0" [(ngModel)]="buscarr" (ionChange)="buscar()">
+  </ion-searchbar>
+
+  <ion-card>
+
+    
+        <ion-item class="coso" *ngFor="let todatos of todatos ">
+          <ion-avatar slot="start">
+            <ion-img [src]="todatos.imagen"></ion-img>
+          </ion-avatar>
+          <label class="labelraro">{{todatos.nombre}} {{todatos.apellido}} <p>{{todatos.tipo_documento}}
+              {{todatos.numero_do}}</p> </label>
+          <ion-tab-button slot="end" (click)="eliminar(todatos.id)">
+            <ion-icon name="trash"></ion-icon>
+            <ion-label>Eliminar</ion-label>
+          </ion-tab-button>
+        </ion-item>
+
+    
+  </ion-card>
+
+</ion-content>

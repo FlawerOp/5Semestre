@@ -1,0 +1,49 @@
+
+
+.fondo{
+    --background: url(../../assets/img/fondo.jpg);
+}
+
+ion-title{
+    text-align: center;
+}
+
+ion-tab-button{
+    background: none;
+    color: white;
+}
+
+ion-input{
+    background: rgb(0, 0, 0);
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+ion-card{
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    padding: 0%;
+}
+
+.coso{
+    --background: rgba(0, 0, 0, 0.801);
+    color:white;
+    margin: 0%;
+    border-radius: 10px;
+    --border: 1px;
+    --border-color: white;
+}
+
+label{
+    font-weight: bold;
+    padding-top: 10%;
+}
+
+ion-select{
+    color: white;
+    font-weight: bold;
+}
+
+ion-label{
+    font-weight: lighter;
+}

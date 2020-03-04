@@ -1,0 +1,7 @@
+{
+  "name": "ParcialVsemestre",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
